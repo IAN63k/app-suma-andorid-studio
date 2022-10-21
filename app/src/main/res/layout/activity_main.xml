@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c2c2c"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="129dp"
+        android:text="El resultado saldra aqui."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="39dp"
+        android:text="¿Sumo por ti?"
+        android:textColor="#FFFFFF"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="239dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:hint="Ingrese el dato a ..."
+        android:inputType="number"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/num2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="236dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:hint="Ingrese el dato b..."
+        android:inputType="number"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintStart_toStartOf="@+id/num1"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="156dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="30dp"
+        android:background="#FFFFFF"
+        android:color="#3a3a3a"
+        android:onClick="sumar"
+        android:text="sumar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="249dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="50dp"
+        android:text="Hago sumas entre dos numeros.\n ¿Quieres intentar?"
+        android:textAlignment="center"
+        android:textColor="#F1F0F0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/num1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
